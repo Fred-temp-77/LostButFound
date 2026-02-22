@@ -1,0 +1,148 @@
+﻿/*body {
+    background-image:*/
+        /*url("https://res.cloudinary.com/dumoghqlq/image/upload/v1771628987/fefaa95d17122d8c00f55202861ae15d_zx82ir.png"),*/
+        /*linear-gradient(to right, rgb(255,205,116), rgb(255,202,123), rgb(255,114,81), rgb(155,41,72));*/
+    /*linear-gradient(to right, rgb(249,171,231), rgb(225,169,246), rgb(209,187,249), rgb(198,199,255), rgb(181,229,255))*/
+    /*background-size: contain;
+    background-position: center;
+}*/
+
+body {
+    background-color: white;
+    padding: 0px 100px;
+}
+
+.navbar {
+    background: linear-gradient(to right, rgb(255,205,116), rgb(255,202,123), rgb(255,114,81), rgb(155,41,72));
+    /*linear-gradient(to right, rgba(1, 1, 1, 0.2) 2%, rgba(1, 1, 1, 0.45) 50%, rgba(1, 1, 1, 0.3) 100%)*/
+    /*, linear-gradient(to right, rgb(225,169,246), rgb(209,187,249), rgb(198,199,255))*/
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    margin: 15px auto;
+    border-radius: 15px;
+    /*border: solid 2px rgba(1, 1, 1, 0.3);*/
+}
+/*@media (min-width: 576px) {
+    .navbar-sm, .navbar {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-md, .navbar-sm, .navbar {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-lg, .navbar-md, .navbar-sm, .navbar {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-xl, .navbar-lg, .navbar-md, .navbar-sm, .navbar {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar-xxl, .navbar-xl, .navbar-lg, .navbar-md, .navbar-sm, .navbar {
+        max-width: 1320px;
+    }
+}*/
+
+.imageHome {
+    width: 700px;
+    height: auto;
+}
+.homePage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    background: linear-gradient(to right, rgb(255,205,116), rgb(255,202,123), rgb(255,114,81), rgb(155,41,72));
+    /*background: linear-gradient(to right, rgba(1, 1, 1, 0.2) 2%, rgba(1, 1, 1, 0.45) 50%, rgba(1, 1, 1, 0.3) 100%);*/
+    /*, linear-gradient(to right, rgb(225,169,246), rgb(209,187,249), rgb(198,199,255))*/
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    /*border: solid 2px rgba(1, 1, 1, 0.3);*/
+    height: 550px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    max-width: 550px;
+    
+}
+    .hero > h1 {
+        font-size: 70px;
+        text-shadow: -2px 2px 2px black;
+        margin-bottom: 30px;
+    }
+    .hero > h2 {
+        font-size: 40px;
+        text-shadow: -2px 2px 2px black;
+        font-style: italic;
+    }
+    .hero > p {
+        font-size: 20px;
+        text-shadow: -2px 2px 2px black;
+    }
+        .hero > p > span {
+            color: rgb(255,192,192)
+        }
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    flex-direction: column;
+    min-width: 550px;
+}
+.buttImg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+.glassButton {
+    background: linear-gradient(to right, rgba(222,234,242, 1) 2%, rgba(179,187,252, 1) 50%, rgba(100,178,229, 1) 100%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    font-size: 25px;
+    width: 250px;
+    box-shadow: -4px 4px 5px black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.glassButton2 {
+    background: linear-gradient(to right, rgba(242, 163, 120, 1) 2%, rgba(210, 105, 80, 1) 50%, rgba(168, 60, 50, 1) 100%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    font-size: 25px;
+    width: 250px;
+    box-shadow: -4px 4px 5px black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+    .glassButton:hover, .glassButton2:hover {
+        background: linear-gradient(to right, rgb(255,255,128), rgb(255,223,160), rgb(255,192,192), rgb(255,160,223), rgb(255,128,255))
+    }
