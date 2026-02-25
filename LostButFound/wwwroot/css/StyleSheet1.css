@@ -23,6 +23,12 @@ body {
     border-radius: 15px;
     /*border: solid 2px rgba(1, 1, 1, 0.3);*/
 }
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: rgb(255,205,116);
+}
 /*@media (min-width: 576px) {
     .navbar-sm, .navbar {
         max-width: 540px;

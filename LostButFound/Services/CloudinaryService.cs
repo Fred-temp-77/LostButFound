@@ -9,11 +9,17 @@ namespace LostButFound.Services
 
         public CloudinaryService(IConfiguration config)
         {
-            var account = new Account(
-                config["CloudinarySettings:CloudName"],
-                config["CloudinarySettings:ApiKey"],
-                config["CloudinarySettings:ApiSecret"]
-            );
+            var cloudName = Environment.GetEnvironmentVariable("CloudinarySettings__CloudName")
+                            ?? config["CloudinarySettings:CloudName"];
+
+            var apiKey = Environment.GetEnvironmentVariable("CloudinarySettings__ApiKey")
+                         ?? config["CloudinarySettings:ApiKey"];
+
+            var apiSecret = Environment.GetEnvironmentVariable("CloudinarySettings__ApiSecret")
+                            ?? config["CloudinarySettings:ApiSecret"];
+
+            var account = new Account(cloudName, apiKey, apiSecret);
+            _cloudinary = new Cloudinary(account);
 
             _cloudinary = new Cloudinary(account);
         }
