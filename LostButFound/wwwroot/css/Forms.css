@@ -1,0 +1,47 @@
+﻿.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h11 {
+    padding: 20px 0px;
+}
+.formm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main {
+    background: linear-gradient(to right, rgb(255,205,116), rgb(255,202,123), rgb(255,114,81), rgb(155,41,72));
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 15px;
+}
+.mainSub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.ItemCard {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: solid 2px rgb(1, 1, 1);
+    gap: 5px;
+    width: 250px;
+    padding: 10px;
+}
+    .ItemCard > p {
+        margin: 0;
+    }
+    .ItemCard > img {
+        margin: 0;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }

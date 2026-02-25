@@ -4,12 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+@* <table class="table">
     <thead>
         <tr>
             <th>
@@ -63,3 +58,28 @@
 }
     </tbody>
 </table>
+ *@
+<div class="main">
+    <h1>Lost Items</h1>
+
+    <p>
+        <a asp-action="Create">Report a Lost Item</a>
+    </p>
+    <div class="mainSub">
+    @foreach (var item in Model)
+    {
+        <div class="ItemCard">
+            <p>@Html.DisplayFor(modelItem => item.Name)</p>
+            <p>Missing Item: @Html.DisplayFor(modelItem => item.Item)</p>
+            <p>@Html.DisplayFor(modelItem => item.Date)</p>
+            <img src="@item.ImgByte" width="200" />
+            <p>Found: @Html.DisplayFor(modelItem => item.Location)</p>
+            <p>Description: <br /> @Html.DisplayFor(modelItem => item.ItemDesc)</p>
+            <div class="Ops">
+                <a asp-action="Edit" asp-route-id="@item.LostId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.LostId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.LostId">Delete</a>
+            </div>
+        </div>
+    }</div>
+</div>

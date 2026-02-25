@@ -10,7 +10,7 @@ namespace LostButFound.Models
         public string Location { get; set; }
         public DateTime Date { get; set; }
         public string ItemDesc { get; set; }
-        public string ImgByte { get; set; }
+        public string? ImgByte { get; set; }
         [NotMapped]
         public IFormFile? ImageFile { get; set; }
     }
